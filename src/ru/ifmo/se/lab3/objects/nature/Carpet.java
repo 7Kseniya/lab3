@@ -9,7 +9,7 @@ public class Carpet extends Nature implements Describable, NatureParamsNormaliza
     }
 
     @Override
-    public String describe() {
+    public String toString() {
         return natureParamsToString(CONTINUED) + getNature_name() + natureParamsToString(WILD) ;
     }
 
