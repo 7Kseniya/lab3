@@ -17,7 +17,7 @@ public class Stem extends Person implements Describable, AdverbNormalization, St
     }
 
     @Override
-    public String describe(){
+    public String toString(){
         return getName() + "был"+ stemParamsToString(ELASTIC) + adverbsToString(LIKE) + stemParamsToString(RUBBER);
     }
 
