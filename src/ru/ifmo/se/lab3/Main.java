@@ -23,15 +23,15 @@ public class Main {
         Greenery greenery = new Greenery("растительности");
 
 
-        String output1 = mummiTrol.describe() + rain.getNature_name() + mummiTrol.stay() + mummiTrol.getName();
+        String output1 = mummiTrol() + rain.getNature_name() + mummiTrol.stay() + mummiTrol.getName();
         output1 += "и" + mummiTrol.adverbsToString(Adverbs.WITHINTEREST) + mummiTrol.overLook() + mummiTrol.natureParamsToString(NatureParams.HIGH)+ mummiTrol.natureParamsToString(NatureParams.GREEN) + hill.getNature_name() + ",";
         String output2 = flowers.adverbsToString(Adverbs.ONWHICH) + flowers.adverbsToString(Adverbs.RIGHTBEFOREEYES) + flowers.blossom() + "и" + harvest.repine() + ",";
         output2 += harvest.changeColor(ColorParams.GREEN_TO_YELLOW) + harvest.changeColor(ColorParams.YELLOW_TO_RED) + ". ";
         String output3 = snusmumrik.getName() + snusmumrik.stepForward() + "и" + snusmumrik.adverbsToString(Adverbs.WITHINTEREST)+ snusmumrik.overLook() + hill.getNature_name() + ". ";
         output3 += windows.thereAreNo() + ", " + doors.thereAreNo() + ".";
-        output3 += carpet.describe() + greenery.getNature_name() + ".";
+        output3 += carpet() + greenery.getNature_name() + ".";
         String output4 = snusmumrik.getName() + snusmumrik.grab() + snusmumrik.getPreposition() + snusmumrik.getLocation() + stem1.getName() + "и" + snusmumrik.pull() + ". ";
-        output4 += stem1.describe() + "и " + stem1.notPull() + stem1.getPreposition() + stem1.getLocation() + "!";
+        output4 += stem1() + "и " + stem1.notPull() + stem1.getPreposition() + stem1.getLocation() + "!";
         String output5 = stem2.adverbsToString(Adverbs.KINDABYCHANCE) + stem2.wrappedAround() + stem1.pronounsToString(Pronouns.HE) + stem2.getPreposition() + stem2.getLocation();
         output5 += "и" + stem2.takeOff() + stem2.pronounsToString(Pronouns.HER)+ ".";
 
