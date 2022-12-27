@@ -17,7 +17,7 @@ public class MummiTrol extends Person implements OverLooked, Describable, Adverb
     }
 
     @Override
-    public String describe(){
+    public String toString(){
         return "А " + getPreposition() + getLocation() + " под ";
     }
     public String stay(){
