@@ -1,12 +1,12 @@
 package ru.ifmo.se.lab3.objects;
 
-public class Windows extends Objects implements NonExisted {
+public class Windows extends House implements NonExisted {
 
-    public Windows(String objects_name) {
-        super(objects_name);
+    public Windows(String house_name) {
+        super(house_name);
     }
     @Override
     public String thereAreNo(){
-        return "ни " + getObjects_name();
+        return "ни " + getHouse_name();
     }
 }
