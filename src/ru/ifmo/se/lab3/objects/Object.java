@@ -1,12 +1,12 @@
 package ru.ifmo.se.lab3.objects;
 
-public abstract class Object {
-    String object_name;
-    public Object(String object_name){
-        this.object_name = object_name;
+public abstract class Objects {
+    String objects_name;
+    public Objects(String objects_name){
+        this.objects_name = objects_name;
     }
 
-    public String getObject_name(){
-        return object_name + "";
+    public String getObjects_name(){
+        return objects_name + "";
     }
 }
