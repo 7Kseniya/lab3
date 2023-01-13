@@ -1,14 +1,15 @@
 package ru.ifmo.se.lab3.objects;
 
-public abstract class Objects {
-    String objects_name;
-    public Objects(String objects_name){
-        this.objects_name = objects_name;
+public abstract class House {
+    String house_name;
+    public House(String house_name){
+        this.house_name = house_name;
     }
 
-    public String getObjects_name(){
-        return objects_name + "";
+    public String getHouse_name(){
+        return house_name + "";
     }
+}
     
     @Override
     public boolean equals(Object o){
@@ -16,12 +17,12 @@ public abstract class Objects {
             return true;
         }
         if (o == null||getClass() != o.getClass()) return false;
-        Objects person  = (Objects) o;
-        return Objects.equals(name, objects.objects_name);
+        House house  = (House) o;
+        return Objects.equals(house_name, house.house_name);
     }
 
     @Override
     public int hashCode(){
-        return Objects.hashCode(objects_name);
+        return Objects.hashCode(house_name);
     }
 }
