@@ -7,5 +7,20 @@ public abstract class Nature {
     public String getNature_name(){
         return nature_name + " ";
     }
+    
+    @Override
+    public boolean equals(Object o){
+        if (this == o){
+            return true;
+        }
+        if (o == null||getClass() != o.getClass()) return false;
+        Nature nature  = (Nature) o;
+        return Objects.equals(nature_name, nature.nature_name);
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hashCode(nature_name);
+    }
 
 }
