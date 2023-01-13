@@ -33,6 +33,20 @@ public class Snusmumrik extends Person implements OverLooked, AdverbNormalizatio
         return " потянул";
     }
     //ONTO SOMEKINDOFSTEM
+    @Override
+    public boolean equals(Object o){
+        if (this == o){
+            return true;
+        }
+        if (o == null||getClass() != o.getClass()) return false;
+        Snusmumrik smusmumrik  = (Snusmumrik) o;
+        return Objects.equals(name, smusmumrik.name);
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hashCode(name);
+    }
 
 }
 
